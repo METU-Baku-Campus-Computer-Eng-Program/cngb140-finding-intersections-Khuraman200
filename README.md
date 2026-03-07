@@ -26,7 +26,7 @@ Write a program that:
 Print the intersection elements in increasing order separated by a space.
 
 ```text
-2
+2 
 
 ```
 
