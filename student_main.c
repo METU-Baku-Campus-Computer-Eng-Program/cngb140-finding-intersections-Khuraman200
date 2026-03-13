@@ -29,6 +29,14 @@ int main() {
                         break;
                     }
                 }
+                if (!exist_already) {
+                        intersection[count] = set1[i];
+                        count++;
+                }
+                break;
+            }
+        }
+    }
     for (i = 0; i < count - 1; i++){
         for (j = 0; j < count-i-1; j++){
             if (intersection[j] > intersection[j+1]){
@@ -36,16 +44,9 @@ int main() {
                 intersection[j] = intersection[j+1];
                 intersection[j+1] = temp;
             }
-        }
-    }
-                if (!exist_already) {
-                    intersection[count] = set1[i];
-                    count++;
-                }
-                break;
-            }
-        }
-    }
+         }
+      }
+        
     //----------------------------------------------------------------//
     for(i = 0; i < count; i++) {
         printf("%d ", intersection[i]);
