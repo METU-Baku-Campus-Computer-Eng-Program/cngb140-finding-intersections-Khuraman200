@@ -22,9 +22,9 @@ int main() {
     for (i = 0; i < n1; i++){
         for (j = 0; j < n2; j++){
             if (set1[i] == set2[j]){
-                int exist_already = 1
+                int exist_already = 0;
                 for (k = 0; k < count; k++){
-                    if (intersection[k] == set1[i]{
+                    if (intersection[k] == set1[i]){
                         exist_already = 1;
                         break;
                     }
